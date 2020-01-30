@@ -1,252 +1,623 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Home</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/featherlight.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Oxygen:300,400,700" rel="stylesheet">
-	
-	<script src="js/jquery-latest.min.js"></script>
-	<script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <!-- Head -->
+  <head>
+    <title>Home</title>
 
-</head>
-<body>
-	<header id="top">
-		<div class="wrapper">			
-			<h1 class="logo"><a href="#">Cardly<span>.</span></a></h1>
-			<nav>
-				<ul id="navigation">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Pricing</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<section id="banner"><a name="home"></a>
-		<div class="wrapper">
-			<div class="banner-content">
-				<span class="subtitle">Hero Header</span>
-				<h2>Main Awesome Headline Here</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus feugiat mi, a tincidunt lectus egestas ut. Duis dignissim sapien, lectus eleifend sit amet. </p>
-				<a href="#" class="button-1">Work with us</a>
-			</div>
-		</div>
-	</section>
-	
-	<section class="featured-articles-section">	
-		<div class="wrapper">
-			<h3>Featured Articles</h3>
-				<div class="cards-container">
-					<div class="article-card card-large" style="background-image: url('images/card-bg-1.jpg');">
-						<div class="article-card-content">
-							<span class="category">Category</span>
-							<h4>Article Title</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus feugiat mi, a tincidunt lectus. </p>
-						</div>
-					</div>
-					<div class="article-card card-small" style="background-image: url('images/card-bg-2.jpg');;">
-						<div class="article-card-content">
-							<span class="category">Category</span>
-							<h4>Article Title</h4>
-							<p><a href="#">Read more</a></p>
-						</div>
-					</div>
-					<div class="article-card article-card-alt card-small" style="background-image: url('images/card-bg-3.jpg');">
-						<div class="article-card-content">
-							<span class="category">Category</span>
-							<h4>Article Title</h4>
-							<p><a href="#">Read more</a></p>
-						</div>
-					</div>
-					<div class="article-card card-medium" style="background-image: url('images/card-bg-4.jpg');">
-						<div class="article-card-content">
-							<span class="category">Category</span>
-							<h4>Article Title</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus feugiat mi, a tincidunt lectus. </p>
-						</div>
-					</div>
-					<div class="article-card article-card-alt card-medium" style="background-image: url('images/card-bg-5.jpg');">
-						<div class="article-card-content">
-							<span class="category">Category</span>
-							<h4>Article Title</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus feugiat mi, a tincidunt lectus. </p>
-						</div>
-					</div>
-					
-					<!--
-					****Example using .article-group class to place small cards on left***
-					
-					<div class="article-group">
-						<div class="article-card card-small">...</div>
-						<div class="article-card card-small">...</div>
-					</div>
-					<div class="article-card card-large">...</div>
-					
-					-->
-					
-					<br class="clear" />
-				</div>
-		</div>
-	</section>
-		
-	<section class="full-width-section" style="background-image: url(images/full-width-bg.jpg);">	
-		<div class="wrapper">
-			<div class="text align-left">
-				<span class="subtitle">Full width</span>
-				<h2>Large Full Width Section Heading</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus feugiat mi, a tincidunt lectus egestas ut. Duis dignissim sapien, lectus eleifend sit amet. </p>
-				<a href="#" class="button-1">Continue Reading</a>
-			</div>
-			<div class="clear"></div>	
-		</div>
-	</section>
+    <!-- Meta -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
 
-	<section class="services-section"><a name="services"></a>
-		<div class="wrapper">
-			<ul class="services-list">
-				<li>
-					<span class="subtitle">About Us</span>
-					<h4>Meet the team</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					<a href="#" class="small-button">More</a>
-				</li>
-				<li>
-					<span class="subtitle">Portfolio</span>
-					<h4>See our work</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					<a href="#" class="small-button">More</a>
-				</li>
-				<li class="emphasis">
-					<span class="subtitle">Contact</span>
-					<h4>Work with us</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					<a href="#" class="small-button">More</a>
-				</li>
-				<div class="clear"></div>	
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> 
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/slick-carousel/slick.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/fonts/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/hovereffects.css"> 
+    <!-- Theme Styles -->
+    <link href="assets/css/scrolling-nav.css" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  </head>
+  <!-- End Head -->
+
+  <body>
+    <!-- Header -->
+    <header id="top">
+      <!-- Navbar --> 
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top" id="mainNav">
+		<div class="container">
+		  <a class="navbar-brand js-scroll-trigger" href="#page-top">Wu Ziyue</a>  
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="ti-menu text-primary"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="#top">Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#about">Events</a>
+        </li>
+			  <li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="#services">Hobbies</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="#portfolio">Activities</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="#team">Travel</a>
+			  </li>
 			</ul>
+		  </div>
 		</div>
-	</section>
-	
-	<section class="masonry-section"><a name="portfolio"></a>
-		<h3>Latest Articles</h3>
-			<div class="wrapper">
-				<div class="masonry">
-					<div class="item">
-						<img src="images/article-image-1.jpg" alt="" class="article-image">
-						<div class="summary">
-							<h4>Article Title</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor.</p>
-							<span class="category">Category - Aug 1, 2016</span>
-						</div>
+	  </nav>
+      <!-- End Navbar --> 
+		<section class="wt-section hero-large hero mt-md-5">
+			<div class="hero-img bg-overlay" data-overlay="0" style="background-image: url(assets/img/intro/img5.jpg);"></div>
+			<div class="container">
+				<div class="row align-items-center text-white">
+					<div class=" col-md-6">
+						<!-- heading -->
+						<h1 class="text-uppercase mb-3 display-3 font-weight-bolder" data-aos="fade-right">
+							Know More About Me
+            </h1>
 					</div>
-					<div class="item advert-item">
-						<img src="images/advert.jpg" alt="" class="advert">
-					</div>
-					<div class="item">
-						<img src="images/article-image-2.jpg" alt="" class="article-image">
-						<div class="summary">
-							<h4>Article Title</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor.</p>
-							<span class="category">Category - Aug 1, 2016</span>
-						</div>
-					</div>
-					<div class="item">
-						<img src="images/article-image-3.jpg" alt="" class="article-image">
-						<div class="summary">
-							<h4>Article Title</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor.</p>
-							<span class="category">Category - Aug 1, 2016</span>
-						</div>
-					</div>
-					<div class="item">
-						<img src="images/article-image-4.jpg" alt="" class="article-image">
-						<div class="summary">
-							<h4>Article Title</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor.</p>
-							<span class="category">Category - Aug 1, 2016</span>
-						</div>
-					</div>
-					<div class="item">
-						<img src="images/article-image-5.jpg" alt="" class="article-image">
-						<div class="summary">
-							<h4>Article Title</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor.</p>
-							<span class="category">Category - Aug 1, 2016</span>
-						</div>
-					</div>
-					<div class="item">
-						<img src="images/article-image-6.jpg" alt="" class="article-image">
-						<div class="summary">
-							<h4>Article Title</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor.</p>
-							<span class="category">Category - Aug 1, 2016</span>
-						</div>
-					</div>
-					<div class="item">
-						<img src="images/article-image-7.jpg" alt="" class="article-image">
-						<div class="summary">
-							<h4>Article Title</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor.</p>
-							<span class="category">Category - Aug 1, 2016</span>
-						</div>
-					</div>
-					<div class="item">
-						<img src="images/article-image-8.jpg" alt="" class="article-image">
-						<div class="summary">
-							<h4>Article Title</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras molestie tristique tempor.</p>
-							<span class="category">Category - Aug 1, 2016</span>
-						</div>
-					</div>
-					
-					
 				</div>
-			<div class="clear"></div>	
-	</section>
-		
-	<section class="instagram-section"><a name="portfolio"></a>
-		<h3>Instagram</h3>
-		<ul class="instagram-list"> 
-			<li class="item">
-				<a href="images/instagram-1.jpg" data-featherlight="images/instagram-1.jpg" class="photo-overlay">
-					<img src="images/instagram-1.jpg" alt="" />
-				</a>
-			</li> 
-			<li class="item">
-				<a href="images/instagram-2.jpg" data-featherlight="images/instagram-2.jpg" class="photo-overlay">
-					<img src="images/instagram-2.jpg" alt="" />
-				</a>
-			</li> 
-			<li class="item">
-				<a href="images/instagram-3.jpg" data-featherlight="images/instagram-3.jpg" class="photo-overlay">
-					<img src="images/instagram-3.jpg" alt="" />
-				</a>
-			</li> 
-			<li class="item">
-				<a href="images/instagram-4.jpg" data-featherlight="images/instagram-4.jpg" class="photo-overlay">
-					<img src="images/instagram-4.jpg" alt="" />
-				</a>
-			</li> 
-			<div class="clear"></div>	
-		</ul>
-	</section>	
-	
-	<footer>
-		<div class="wrapper">
-			<div class="footer-left">
-				<p class="copyright">Copyright &copy; 2019.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
 			</div>
-			<div class="footer-right">
-				<p class="footer-links"><a href="#">Privacy Policy</a> I <a href="#">Terms &amp; Conditions</a></p>
-			</div>
-			<div class="clear"></div>
+		</section>
+
+    </header>
+    <!-- End Header -->
+
+
+
+    <main role="main">
+
+
+<section class="wt-section">
+        <div class="container">
+		<div class="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">
+          <div class="col-md-8 text-center w-md-50 mx-auto mb-0 ">
+            <h2 class="mb-md-2">Where I study and live</h2>
+            <p>I entered Zhejiang University in 2017 and I will study for four years in Hangzhou, Zhejiang Province. Hangzhou, located in the east of China (120°E, 30°N), is 'the land of
+              Internet' and one of the most famous tourist cities in China. Besides, we have witnessed rapid economic development in Hangzhou these years. The G20 was held in Hangzhou in 2016.
+            </p>
+          </div>
 		</div>
-	</footer>
-</body>
+		 
+          <div class="row">
+            <div class="col-lg-6 mb-7 mb-lg-0 px-lg-5" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="200">
+              <!-- Testimonial -->
+              <blockquote class="wt-blockquote-v2 rounded mb-5">
+                <p><strong>Zhejiang University</strong></p>
+                <p>Established in 1897, Zhejiang University is one of the best universities in China. It has many world-class disciplines and top teaching resources. In 2020 QS University Rankings, ZJU ranks 54th in the world and 6th in Asia.</p></blockquote>
+              <div class="media wt-font-size-90">
+                <img src="assets/img/about/img25.jpg" width="75%" class="rounded-top" alt="">
+              </div>
+              <!-- End Testimonial -->
+            </div>
+
+            <div class="col-lg-6 px-lg-5" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="400">
+              <!-- Testimonial -->
+              <blockquote class="wt-blockquote-v2 rounded mb-5">
+                <p><strong>Chu Kochen Honors College</strong></p>
+                <p>Chu Kochen Honors College is the only honors college in ZJU. The most excellent students from the school will be selected to study in this college, and the last 10% in CKC will be eliminated each year.</p></blockquote>
+              </blockquote>
+              <div class="media wt-font-size-90">
+                <img src="assets/img/about/img26.jpg" width="75%" class="rounded-top" alt="">
+              </div>
+              <!-- End Testimonial -->
+            </div>
+          </div>
+        </div>
+      </section>	 
+      
+      <section class="bg-dark position-relative pt-5">
+        <div class="container">
+          <div class="row text-center text-uppercase text-white">
+            <div class="col-lg-3 col-sm-6 pb-5">
+              <h5 class="js-counter display-4 mb-1">21</h5>
+              <small class="d-block font-style-normal text-uppercase wt-letter-spacing-sm">My Age</small>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 pb-5">
+              <h5 class="js-counter display-4 mb-1">56</h5>
+              <small class="d-block font-style-normal text-uppercase wt-letter-spacing-sm">Total Blogs</small>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 pb-5">
+              <h5 class="js-counter display-4 mb-1">133</h5>
+              <small class="d-block font-style-normal text-uppercase wt-letter-spacing-sm">Cities I Have Been To</small>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 pb-5">
+              <h5 class="js-counter display-4 mb-1">7700</h5>
+              <small class="d-block font-style-normal text-uppercase wt-letter-spacing-sm">Days Have Passed</small>
+            </div>
+          </div>
+        </div>
+      </section>
+<!--city统计：
+华北15：
+石家庄、保定、太原、吕梁、长治、临汾、忻州、呼伦贝尔、通辽、赤峰、
+兴安盟、阿拉善盟、齐齐哈尔、大庆、阜新
+华东16：
+南京、苏州、杭州、绍兴、合肥、黄山、福州、泉州、漳州、厦门、
+南昌、九江、吉安、赣州、泰安、济宁
+中南57：
+郑州、洛阳、商丘、许昌、南阳、驻马店、信阳、武汉、十堰、随州、
+宜昌、潜江、黄石、咸宁、长沙、岳阳、张家界、常德、益阳、株洲、
+怀化、衡阳、郴州、邵阳、广州、韶关、梅州、河源、清远、潮州、
+揭阳、汕头、肇庆、惠州、佛山、东莞、云浮、汕尾、江门、中山、
+深圳、珠海、阳江、茂名、湛江、南宁、桂林、柳州、百色、来宾、
+北海、海口、三亚、儋州、文昌、五指山、香港、澳门
+西南13：
+成都、广元、阿坝州、贵阳、遵义、黔东南、昆明、丽江、普洱、迪庆、
+拉萨、日喀则、林芝
+西北17：
+西安、铜川、汉中、延安、兰州、嘉峪关、张掖、酒泉、武威、西宁、
+海东、海西、银川、中卫、乌鲁木齐、伊犁、阿勒泰
+海外15：
+东京、京都、大阪、松阪、伦敦、牛津、伯明翰、哥本哈根、斯塔万格、卑尔根、
+奥斯陆、斯德哥尔摩、图尔库、赫尔辛基、塔林
+-->
+
+<!-- about -->
+<section class="wt-section pb-0" id="about">
+  <div class="container">
+
+		<div class="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">
+      <div class="col-md-8 text-center w-md-50 mx-auto mb-0 ">
+        <h2 class="mb-md-2">Events</h2>
+        <p class="lead text-muted">I love to record my life and there're lots of memorable things in college. Some events make me grow and gain a lot of valuable experience, others bring me joy and fulfillment.</p>
+      </div>
+</div>
+
+      <div class="row justify-content-between align-items-center" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="200">
+          <div class="col-md-5">
+              <img src="assets/img/about/img21.jpg" width="90%" class="rounded-md" alt="">
+          </div>
+          <div class="col-md-7"> 
+              <h2 class="mb-4 ">Establish Alumni Association</h2>
+              <p class="text-muted">The principal of my high school came to Zhejiang University to help us establish alumni association. Every class of students can help each other in school and in the future. At the same time we set up a foundation to help the fellows in need.</p>
+          </div>
+        </div>
+    </div>
+</section> 
+
+<section class="wt-section pb-0">
+  <div class="container">
+      <div class="row justify-content-between align-items-center" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="200">
+          <div class="col-md-7"> 
+              <h2 class="mb-4">Volunteer Teaching in the West </h2>
+              <p class="text-muted">In the summer of 2018, I together with other 19 students to go to Aba Autonomous Prefecture, a place 3,500 meters above sea level, to do volunteer teaching. As the leader of the course group, I organized and carried out more than 60 kinds of courses</p>
+          </div>
+        
+    <div class="col-md-5">
+             <img src="assets/img/about/img22.jpg" width="90%" class="rounded-md" alt="">
+          </div>
+      </div>
+  </div>
+</section> 
+
+<section class="wt-section pb-0">
+<div class="container">
+    <div class="row justify-content-between align-items-center" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="200">
+  <div class="col-md-5">
+            <img src="assets/img/about/img23.jpg" width="90%" class="rounded-md" alt="">
+        </div>
+        <div class="col-md-7"> 
+            <h2 class="mb-4 ">Visiting Student in Oxford</h2>
+            <p class="text-muted">The photo was taken after the group presentation. We did a presentation on brain-computer interfaces. It is surprising and it is an honor for us to get the Best Presentation Award.</p>
+        </div>
+      
+    </div>
+</div>
+
+
+<section class="wt-section pb"> <!--最后一个event这里不一样-->
+<div class="container">
+    <div class="row justify-content-between align-items-center" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="200">
+        <div class="col-md-7"> 
+            <h2 class="mb-4">Tsingyan Piano Club</h2>
+            <p class="text-muted">This is our club's general meeting. I acted as the leader of the school piano club from 2018 to 2019. It is so nice to see so many enthusiastic students who really like playing piano and making music!</p>
+        </div>
+      
+  <div class="col-md-5">
+           <img src="assets/img/about/img24.jpg" width="90%" class="rounded-md" alt="">
+        </div>
+    </div>
+</div>
+</section> 
+
+
+
+
+
+<!--Amenities-->
+<section class="wt-section bg-primary">
+  <div class="container">
+<div class="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">
+    <div class="col-md-8 text-center w-md-50 mx-auto mb-0 ">
+      <h2 class="mb-md-2">Moments</h2>
+      <p>I am always grateful to myself for being able to record these moments in time as the most precious memory of my college life.</p>
+    </div>
+</div>
+    <!-- Feature Blocks -->
+    <div class="row">  
+<div class="col-md-4">
+          <div class="bg-white p-5 mb-4 text-center rounded-md overflow-hidden b-hover" data-aos="fade-up"  data-aos-easing="linear" data-aos-delay="300">
+      <img src="assets/img/about/img27.jpg" width="90%" class="rounded-md" alt="">
+                  <h6 class="my-2">Reunion</h6>
+                  <p class="text-muted">Rare opportunity, during the motherland's 70th birthday, my two sisiter and I gathering in Shanghai.</p> 
+          </div>
+      </div>
+    <div class="col-md-4">
+          <div class="bg-white p-5 mb-4 text-center rounded-md overflow-hidden b-hover" data-aos="fade-up"  data-aos-easing="linear" data-aos-delay="500">
+            <img src="assets/img/about/img28.jpg" width="90%" class="rounded-md" alt="">
+                  <h6 class="my-2">Competition</h6>
+                  <p class="text-muted">Stay up late with my teammates to complete the mathematical modeling competition! Thanks letter for cooperation.</p> 
+          </div>
+      </div>
+
+<div class="col-md-4">
+          <div class="bg-white p-5 mb-4 text-center rounded-md overflow-hidden b-hover" data-aos="fade-up"  data-aos-easing="linear" data-aos-delay="800">
+            <img src="assets/img/about/img29.jpg" width="90%" class="rounded-md" alt="">
+                  <h6 class="my-2">Party</h6>
+                  <p class="text-muted">Wish you happy birthday and have a nice time! It is so happy to be with friend to celebrate my 21st birthday together.</p> 
+          </div>
+      </div>
+    </div>
+    <!-- End Feature Blocks -->  
+  </div>
+</section>
+
+
+
+<section class="wt-section bg-light" id="services">
+    <div class="container"> 
+		<div class="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">
+          <div class="col-md-8 text-center w-md-50 mx-auto mb-0 ">
+            <h2 class="mb-md-2">My Hobbies</h2>
+            <p class="lead text-muted">One of my characteristics is that I have many hobbies. I think that trying and learning new things are really enjoyable and I could have a wonderful time during the exploring process.</p>
+          </div>
+		</div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card mb-md-0 mb-3 border-1 rounded-md overflow-hidden b-hover" data-aos="fade-up"  data-aos-easing="linear" data-aos-delay="300">
+                    <a href="#"><img class="card-img-top" src="assets/img/services/img1.jpg" alt="card image"></a>
+                    <div class="card-body py-4">
+                        <strong href="#" class="mb-2 d-block">Art & Design</strong>
+                        <h5 class="mb-4 text-primary">Photography</h5>
+                        <div class="mb-4">
+                            <p>Photography requires high level light and composition skills, which gives me a chance to observe the world attentively.</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-md-0 mb-3 border-1 rounded-md overflow-hidden b-hover" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                    <a href="#"><img class="card-img-top" src="assets/img/services/img2.jpg" alt="card image"></a>
+                    <div class="card-body py-4">
+                        <strong class="mb-2 d-block">Music Making</strong>
+                        <h5 class="mb-4 text-primary">Playing the Guitar</h5>
+                        <div class="mb-4">
+                            <p>Music is a way to express emotions, playing an instrument can make my mood instantly relaxed.</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-md-0 mb-3 border-1 rounded-md overflow-hidden b-hover" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="800">
+                    <a href="#"><img class="card-img-top" src="assets/img/services/img3.jpg" alt="card image"></a>
+                    <div class="card-body py-4">
+                        <strong href="#" class="mb-2 d-block">Sports</strong>
+                        <h5 class="mb-4 text-primary">Soccer Time</h5>
+                        <div class="mb-4">
+                            <p>The best thing to remember is to sweat on the field and enjoy the victory with my teammates.</p>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+
+
+	  
+	   
+
+<section class="wt-section" id="portfolio"> 
+ <div class="container">
+        <div class="row justify-content-md-center text-center pb-lg-5">
+            <div class="col-md-12">
+                <h2 class="h1">Activities</h2>
+                <p>Besides what have mentioned above, I enjoy all kinds of outdoor exercises and activities, especially those require great strength and endurance. Such as biking, sailing, mountain climbing and so on.</p>
+            </div>
+        </div>
+         <div class="portfolio-item row" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100">
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm"> 
+				<div class="hovereffect rounded-md overflow-hidden">
+					<img class="img-fluid img-responsive" src="assets/img/portfolio/img11.jpg" alt="">
+						<div class="overlay"> 
+							<p>
+								<a href="assets/img/portfolio/img11.jpg" class="fancylight popup-btn info" data-fancybox-group="light">Biking
+								<i>view</i></a>
+							</p>
+						</div>
+					</div> 
+			    
+            </div> 
+			    <div class="item selfie col-lg-3 col-md-4 col-6 col-sm"> 
+				<div class="hovereffect rounded-md overflow-hidden">
+					<img class="img-fluid img-responsive" src="assets/img/portfolio/img12.jpg" alt="">
+						<div class="overlay"> 
+							<p>
+								<a href="assets/img/portfolio/img12.jpg" class="fancylight popup-btn info" data-fancybox-group="light">Sailing
+								<i>view</i></a>
+							</p>
+						</div>
+					</div> 
+			    
+            </div> 
+				    <div class="item lap col-lg-3 col-md-4 col-6 col-sm"> 
+				<div class="hovereffect rounded-md overflow-hidden">
+					<img class="img-fluid img-responsive" src="assets/img/portfolio/img13.jpg" alt="">
+						<div class="overlay"> 
+							<p>
+								<a href="assets/img/portfolio/img13.jpg" class="fancylight popup-btn info" data-fancybox-group="light">Canoeing
+								<i>view</i></a>
+							</p>
+						</div>
+					</div> 
+			    
+            </div>
+				    <div class="item selfie col-lg-3 col-md-4 col-6 col-sm"> 
+				<div class="hovereffect rounded-md overflow-hidden">
+					<img class="img-fluid img-responsive" src="assets/img/portfolio/img14.jpg" alt="">
+						<div class="overlay"> 
+							<p>
+								<a href="assets/img/portfolio/img14.jpg" class="fancylight popup-btn info" data-fancybox-group="light">Mountain Climbing
+								<i>view</i></a>
+							</p>
+						</div>
+					</div> 
+			    
+            </div> 
+				    <div class="item lap col-lg-3 col-md-4 col-6 col-sm"> 
+				<div class="hovereffect rounded-md overflow-hidden">
+					<img class="img-fluid img-responsive" src="assets/img/portfolio/img15.jpg" alt="">
+						<div class="overlay"> 
+							<p>
+								<a href="assets/img/portfolio/img15.jpg" class="fancylight popup-btn info" data-fancybox-group="light">Driving
+								<i>view</i></a>
+							</p>
+						</div>
+					</div> 
+			    
+            </div> 
+				    <div class="item gts col-lg-3 col-md-4 col-6 col-sm"> 
+				<div class="hovereffect rounded-md overflow-hidden">
+					<img class="img-fluid img-responsive" src="assets/img/portfolio/img16.jpg" alt="">
+						<div class="overlay"> 
+							<p>
+								<a href="assets/img/portfolio/img16.jpg" class="fancylight popup-btn info" data-fancybox-group="light">Hiking
+								<i>view</i></a>
+							</p>
+						</div>
+					</div> 
+			    
+            </div> 
+				    <div class="item gts col-lg-3 col-md-4 col-6 col-sm"> 
+				<div class="hovereffect rounded-md overflow-hidden">
+					<img class="img-fluid img-responsive" src="assets/img/portfolio/img17.jpg" alt="">
+						<div class="overlay"> 
+							<p>
+								<a href="assets/img/portfolio/img17.jpg" class="fancylight popup-btn info" data-fancybox-group="light">Camping
+								<i>view</i></a>
+							</p>
+						</div>
+					</div> 
+			    
+            </div> 
+				    <div class="item selfie col-lg-3 col-md-4 col-6 col-sm"> 
+				<div class="hovereffect rounded-md overflow-hidden">
+					<img class="img-fluid img-responsive" src="assets/img/portfolio/img18.jpg" alt="">
+						<div class="overlay"> 
+							<p>
+								<a href="assets/img/portfolio/img18.jpg" class="fancylight popup-btn info" data-fancybox-group="light">Paragliding
+								<i>view</i></a>
+							</p>
+						</div>
+					</div> 
+			    
+            </div>   
+         </div>
+      </div>
+</section>	
+
+<!--travel-->
+<section class="bg-light wt-section" id="team">
+        <div class="container"> 
+		<div class="row justify-content-md-center text-center mb-lg-5 mb-4 pb-lg-5">
+            <div class="col-md-12">
+                <h2 class="h1">Travel</h2>
+                <p>Traveling is my favorite way to spend my vacation. It enables me to see the diversity of the world and eliminate prejudice and narrowness. 
+                  As far as I am concern,it is a powerful learning method as important as reading books and studying in class. Meanwhile, my goal is to travel to every corner of the world.</p>
+            </div>
+        </div>
+
+        <!--map-->
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 mb-5">  <!--这里改大小-->
+              <figure data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100">
+                <img class="w-100 rounded-top" src="assets/img/team/img1.png" alt="Image Description"> 
+                <div class="wt-box-shadow-sm bg-white text-center rounded p-4">
+                  <div class="mb-3">
+                    <h5 class="mb-1">China</h5>
+                    <small class="d-block font-style-normal text-uppercase text-primary wt-letter-spacing-xs">The place I have been to</small>
+                  </div>
+                </div> 
+              </figure> 
+            </div>
+
+            <div class="col-lg-6 col-sm-6 mb-5"> 
+              <figure data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
+                <img class="w-100 rounded-top" src="assets/img/team/img2.png" alt="Image Description"> 
+                <div class="wt-box-shadow-sm bg-white text-center rounded p-4">
+                  <div class="mb-3">
+                    <h5 class="mb-1">The World</h5>
+                    <small class="d-block font-style-normal text-uppercase text-primary wt-letter-spacing-xs">The place I have been to</small>
+                  </div>
+                </div> 
+              </figure> 
+            </div>
+
+            <!--photo-->
+            <div class="col-lg-3 col-sm-4 mb-5"> 
+              <figure data-aos="fade-up" data-aos-easing="linear" data-aos-delay="300">
+                <img class="w-100 rounded-top" src="assets/img/team/img3.jpg" alt="Image Description">
+ 
+                <div class="wt-box-shadow-sm bg-white text-center rounded p-4">
+                  <div class="mb-3">
+                    <h5 class="mb-1">Stavanger, Norway</h5>
+                    <small class="d-block font-style-normal text-uppercase text-primary wt-letter-spacing-xs">2019.7</small>
+                  </div>
+                </div> 
+              </figure> 
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mb-5"> 
+              <figure data-aos="fade-up" data-aos-easing="linear" data-aos-delay="400">
+                <img class="w-100 rounded-top" src="assets/img/team/img4.jpg" alt="Image Description"> 
+                <div class="wt-box-shadow-sm bg-white text-center rounded p-4">
+                  <div class="mb-3">
+                    <h5 class="mb-1">Sichuan, China</h5>
+                    <small class="d-block font-style-normal text-uppercase text-primary wt-letter-spacing-xs">2018.9</small>
+                  </div>
+                </div> 
+              </figure> 
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mb-5"> 
+              <figure data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                <img class="w-100 rounded-top" src="assets/img/team/img5.jpg" alt="Image Description">
+ 
+                <div class="wt-box-shadow-sm bg-white text-center rounded p-4">
+                  <div class="mb-3">
+                    <h5 class="mb-1">Tokyo, Japan</h5>
+                    <small class="d-block font-style-normal text-uppercase text-primary wt-letter-spacing-xs">2017.8</small>
+                  </div>
+                </div> 
+              </figure> 
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mb-5"> 
+              <figure data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">
+                <img class="w-100 rounded-top" src="assets/img/team/img6.jpg" alt="Image Description"> 
+                <div class="wt-box-shadow-sm bg-white text-center rounded p-4">
+                  <div class="mb-3">
+                    <h5 class="mb-1">Ningxia, China</h5>
+                    <small class="d-block font-style-normal text-uppercase text-primary wt-letter-spacing-xs">2019.10</small>
+                  </div>
+                </div> 
+              </figure> 
+            </div>
+
+          </div> 
+        </div>
+      </section>
+
+
+      <div class="card bg-primary border-0 rounded-0 p-5">
+        <div class="container">
+            <div class="row justify-content-between align-items-center text-center text-md-left">
+                <div class="col-md-8">
+                    <h5 class="mb-1 d-inline-block border-right border-sm-right-0 pr-md-4 mr-md-4">Contact</h5>
+                    <p class="mb-0 d-inline-block">If you have any question, be free to email me: <strong>wuziyue@zju.com</strong></p>
+                </div>
+                <div class="col-md-4 text-lg-right mt-md-0 mt-3">
+                    <a href="mailto:wuziyue@zju.edu.cn" class="btn btn-pill btn-outline-dark">Send Mails</a>
+                </div>
+            </div>
+        </div>
+      </div>
+        
+      <!-- End Clients Section -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-center text-md-left mb-3 mb-md-0">
+            <small class="text-white">Copyright &copy; 2020. Ziyue Wu. All rights reserved.</small>
+          </div>
+
+          <div class="col-md-4 align-self-center">
+            <ul class="list-inline text-center text-md-right mb-0">
+              <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <a class="text-white" target="_blank" href="#">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Instagram">
+                <a class="text-white" target="_blank" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <a class="text-white" target="_blank" href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Dribbble">
+                <a class="text-white" target="_blank" href="#">
+                  <i class="fab fa-dribbble"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  
+    <!-- JS Script Files --> 
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/vendors/jquery.migrate.min.js"></script>
+    <script src="assets/vendors/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Components Vendor  --> 
+    <script src="assets/vendors/slick-carousel/slick.min.js"></script>
+	<script src="assets/js/isotope.pkgd.js"></script>
+    <script src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/counters/waypoint.min.js"></script>
+    <script src="assets/vendors/counters/counterup.min.js"></script>
+ 
+	<script src="assets/js/aos.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <!--Plugin Initialize-->
+    <script src="assets/js/global.js"></script>
+
+    <!-- Theme Components and Settings --> 
+    <script src="assets/vendors/carousel.js"></script>
+    <script src="assets/vendors/counters.js"></script>
+	
+    <!-- END JAVASCRIPTS -->
+	
+  </body>
+  <!-- End Body -->
 </html>
